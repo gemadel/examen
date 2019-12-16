@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dothings</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+        <link href = "https://fonts.googleapis.com/css?family= Bentham | Roboto & display = swap" rel = "stylesheet">
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            :root{
+                --pink: #D6C7C3;
+                --negre: #1D1D1C;
+            }
+            img{
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+            }
+            
+            header{
+                color: var(--pink);
+            }
+            h1{
+                font-size: 21em;
+                padding: 90px 0 100px 0;
+                font-family: 'Bentham', serif;
+                text-align: center;
+            }
+            h2{
+                font-size: 1em;
+                font-weight: 400;
+                padding: 30px 800px 0 20px;
+                font-family: 'Roboto', sans-serif;
+            }
+             .c1{
+                display: grid;
+                grid-template: repeat(2,1fr)/repeat(2,1fr);  
+                grid-gap: 15px;
+                padding: 0 20px;
+            }
+            
+            main figure:first-child{
+                grid-row: span 2;
+            }
+            figure{
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                flex-grow: 1;
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                cursor:pointer;
+            }
+            footer{
+                padding: 2em 1em;
+                color: var(--negre);
+                display: flex;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+            }
+            .fo1{
+                width: 51%;
+            }
+            .fo2{
+                width: 50%;
+            }
+            }
+             @media (min-device-width: 300px) and (max-device-width: 480px){
+                body{
+                    font-size: 10px;
+                }
+                .container{
+                    grid-template: repeat(2,1fr)/repeat(2,1fr);  
+                }
+             @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+                body{
+                    font-size: 11px;
+                }
+                .container{
+                    grid-template: repeat(2,1fr)/repeat(2,1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>We are a brand experience design company.  We partner with clients to help them connect with their audiences through outstanding products, experiences, and environments.  We do it through our unique design “with a point of view” approach.  We believe that enriching product experiences with a sense of style always delivers business results.</h2>
+            <h1>Dothings</h1>
+        </header>
+        <main class="c1">
+            <figure>
+                <div class="f1">
+                    <img src="img/dothings.jpg">
+                </div>
+            </figure>
+            <figure>
+                 <div class="f1">
+                    <img src="img/vote.jpg">
+                </div>
+            </figure>
+            <figure>
+                <div class="f1">
+                    <img src="img/TomFord.gif">
+                </div>
+            </figure>
+        </main>
+        <footer>
+            <div class="fo1">
+                <p>61 Greenpoint Ave, Suite #306</p>
+                <p>Brooklyn, NY 11222</p>
+                <p>212 228 3328</p>
+               <a href="#"><p>hello@dothingsnyc.com</p></a>
+            </div>
+            <div class="fo2">
+                <a href="#"><p>Instagram</p></a>
+                <a href="#"><p>Linkedin</p></a>
+                <p>©Dothings 2019</p>
+            </div>
+        </footer>
+    </body>
+</html>
